@@ -1,0 +1,9 @@
+version: "1"
+rules:
+  # hardreset local master with upstream
+  - base: master
+    upstream: yasirkula:master
+    mergeMethod: hardreset
+  # create pull request when local master is updated
+  - base: upm-convert
+    upstream: master
